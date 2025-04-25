@@ -14,6 +14,7 @@ function DocumentList({documentList,params}) {
     const DeleteDocument=async(docId)=>{
       await deleteDoc(doc(db, "workspaceDocuments", docId));
       toast('Document Deleted !')
+      router.push('/workspace/' + param?.workspaceid);
     }
 
   return (

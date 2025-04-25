@@ -20,10 +20,10 @@ function DocumentOptions({doc,deleteDocument}) {
         </DropdownMenuTrigger>
         <DropdownMenuContent>
             
-            <DropdownMenuItem className="flex gap-2"> 
+            {/* <DropdownMenuItem className="flex gap-2"> 
             <Link2Icon className='h-4 w-4'/> Share Link</DropdownMenuItem>
             <DropdownMenuItem className="flex gap-2"> 
-            <PenBox className='h-4 w-4'/>Rename</DropdownMenuItem>
+            <PenBox className='h-4 w-4'/>Rename</DropdownMenuItem> */}
             <DropdownMenuItem 
             onClick={()=>deleteDocument(doc?.id)}
             className="flex gap-2 text-red-500"> 
